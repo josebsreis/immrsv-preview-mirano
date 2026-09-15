@@ -115,7 +115,7 @@ const SIZES = '3rem';
      line, which means a longer name leans into the gutter rather than
      wrapping into the quotes. */
   /* the size every section's name is set at */
-  h2 { grid-column: 1; white-space: nowrap;
+  h2 { grid-column: 1; white-space: normal; /* TRIAL: was nowrap; two lines in the wide face */
        font-size: var(--t-h2); font-weight: var(--w-display);
        line-height: var(--lh-display); letter-spacing: var(--track-display);
        color: var(--ink); }

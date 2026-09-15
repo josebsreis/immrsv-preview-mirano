@@ -57,6 +57,10 @@
      fallback is real Helvetica Neue, which is close enough in width that the
      swap does not throw the layout about. */
   --font-sans: InterVariable, "Inter Fallback", "Helvetica Neue", Helvetica, Arial, system-ui, sans-serif;
+  /* TRIAL — the client's: a wide display face for the headings alone, the
+     copy staying in Inter. An extended face is already loose, so the
+     headings' tracking is eased where it is applied (global.css). */
+  --font-display: "Mirano Extended", var(--font-sans);
   /* The reading sizes run small and the display sizes stay large: the gap
      between them is the effect. Set at a comfortable 15px, body copy reads
      as a website; at 14 with the leading left open it reads as an interface,

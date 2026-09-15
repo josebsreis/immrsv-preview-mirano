@@ -16,6 +16,14 @@
   font-display: swap;
   src: url('/fonts/InterVariable.woff2') format('woff2');
 }
+/* TRIAL: the client's display face, variable in weight, for headings only */
+@font-face {
+  font-family: 'Mirano Extended';
+  font-style: normal;
+  font-weight: 200 700;
+  font-display: swap;
+  src: url('/fonts/MiranoExtendedVF.woff2') format('woff2');
+}
 /* The fallback the page is set in until Inter arrives, sized to Inter's
    metrics: the same text takes the same room in either, so the swap does
    not re-flow the page or re-paint the headline larger — which is what a
@@ -58,6 +66,9 @@ h1, h2, h3 { font-weight: var(--w-title); }
    last few lines of a paragraph so it never ends on a single word. Both
    are a hint the browser drops where it cannot afford it; nothing breaks. */
 h1, h2, h3, h4 { text-wrap: balance; }
+/* TRIAL: the headings in the client's face; wide already, so tracked
+   nearly straight rather than tight */
+h1, h2, h3 { font-family: var(--font-display); letter-spacing: -0.01em; }
 p, li, dd, blockquote { text-wrap: pretty; }
 
 :focus-visible { outline: var(--hairline) solid var(--ink); outline-offset: 3px; }
